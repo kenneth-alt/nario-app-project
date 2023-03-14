@@ -1,6 +1,6 @@
 {
   "name": "nario-app-project",
-  "type": "module"
+  "type": "module",
   "version": "1.0.0",
   "description": "Nario - your life script project",
   "main": "index.js",
@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
