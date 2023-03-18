@@ -1,2 +1,2 @@
 # nario-app-project
-Nario - your life script project
+Nario - make your thinking visible
