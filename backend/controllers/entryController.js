@@ -4,23 +4,23 @@ const getEntries = (req, res) => {
 }
 
 // @desc create entries // @route POST /entries // @access Private
-const createEntries = (req, res) => {
-    res.send('create entries')
+const createEntry = (req, res) => {
+    res.send('create entry')
 }
 
 // @desc update entries // @route PUT /entries/:id // @access Private
-const updateEntries = (req, res) => {
-    res.send(`update entries ${req.params.id}`)
+const updateEntry = (req, res) => {
+    res.send(`update entry ${req.params.id}`)
 }
 
 // @desc delete entries // @route DELETE /entries/:id // @access Private
-const deleteEntries = (req, res) => {
-    res.send(`delete entries ${req.params.id}`)
+const deleteEntry = (req, res) => {
+    res.send(`delete entry ${req.params.id}`)
 }
 
 export {
     getEntries,
-    createEntries,
-    updateEntries,
-    deleteEntries,
+    createEntry,
+    updateEntry,
+    deleteEntry,
 }
