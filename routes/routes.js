@@ -4,17 +4,17 @@ export const router = express.Router()
 
 
 router.get('/', (req, res) => {
-    res.send('entries working')
+    res.send('get entries')
 })
 
-router.get('/', (req, res) => {
-    res.send('entries working')
+router.post('/', (req, res) => {
+    res.send('create entries')
 })
 
-router.get('/', (req, res) => {
-    res.send('entries working')
+router.put('/:id', (req, res) => {
+    res.send(`update entries ${req.params.id}`)
 })
 
-router.get('/', (req, res) => {
-    res.send('entries working')
+router.delete('/:id', (req, res) => {
+    res.send(`delete entries ${req.params.id}`)
 })
