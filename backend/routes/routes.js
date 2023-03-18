@@ -1,4 +1,5 @@
 import express from "express"
+import { getEntries, createEntries, updateEntries, deleteEntries } from "../controllers/routeController.js"
 
 export const router = express.Router()
 

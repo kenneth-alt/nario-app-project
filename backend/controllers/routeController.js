@@ -8,17 +8,17 @@ const createEntries = (req, res) => {
     res.send('create entries')
 }
 
-// @desc update entries // @route PUT /entries // @access Private
+// @desc update entries // @route PUT /entries/:id // @access Private
 const updateEntries = (req, res) => {
     res.send(`update entries ${req.params.id}`)
 }
 
-// @desc delete entries // @route DELETE /entries // @access Private
+// @desc delete entries // @route DELETE /entries/:id // @access Private
 const deleteEntries = (req, res) => {
     res.send(`delete entries ${req.params.id}`)
 }
 
-module.exports {
+export {
     getEntries,
     createEntries,
     updateEntries,
