@@ -7,11 +7,5 @@ import {
 
 export const router = express.Router()
 
-
-router.get('/', getEntries)
-
-router.post('/', createEntry)
-
-router.put('/:id', updateEntry)
-
-router.delete('/:id', deleteEntry)
+router.route('/').get(getEntries).post(createEntry)
+router.route('/:id').put(updateEntry).delete(deleteEntry)
