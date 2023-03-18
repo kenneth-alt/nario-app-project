@@ -1,6 +1,9 @@
+import { entryModel } from "../models/entrySchema.js"
+
 // @desc get entries // @route GET /entries // @access Private
-const getEntries = (req, res) => {
-    res.send('get entries')
+const getEntries = async (req, res) => {
+    const entries = await entryModel.find();
+    res.status(200).json(entries);
 }
 
 // @desc create entries // @route POST /entries // @access Private
