@@ -1,18 +1,20 @@
 import mongoose from "mongoose";
 
-const entrySchema = mongoose.Schema({
+const entrySchema = new mongoose.Schema({
     topic: {
-        type: String,
-        required: [true, 'Please input a topic']
+      type: String,
+      required: true
     },
-    entry: {
-        type: String,
-        required: [true, 'Please input entry in text format']
-
+    content: {
+      type: String,
+      required: true
     },
-}, 
-{timestamps: true,
-});
+    created_at: {
+      type: Date,
+      default: Date.now
+    }
+  });
 
-const entryModel = mongoose.model('Entry', entrySchema)
-export { entryModel }
+const Entry = mongoose.model('Entry', entrySchema);
+
+export { Entry };

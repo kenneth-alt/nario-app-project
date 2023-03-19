@@ -12,14 +12,8 @@ const app = express()
 const port = process.env.PORT 
 
 app.use(express.json())
-
-
-
-
 app.use(express.urlencoded({ extended: false}))
 
 app.use('/entries', router)
-
-
 
 app.listen(port, () => console.log(`Server started on port ${port}`))
