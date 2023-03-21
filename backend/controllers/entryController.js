@@ -6,7 +6,7 @@ const getEntries = async (req, res) => {
     res.status(200).json(entries);
 }
 
-// @desc create entries // @route POST /entries // @access Private
+// @desc create entries ======= @route POST /entries ======= @access Private
 const createEntry = async (req, res) => {
     try {
         const { topic, content } = req.body;
@@ -14,7 +14,7 @@ const createEntry = async (req, res) => {
         const newEntry = new Entry({ topic, content });
         // Save the new post to the database
         await newEntry.save();
-        
+
         // Send a response indicating the post was created successfully
         res.status(201).json(newEntry);
 
