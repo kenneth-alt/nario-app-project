@@ -2,7 +2,7 @@ import express from "express"
 import colors from "colors"
 import dotenv from "dotenv"
 import { connectDB } from "./config/db.js"
-import { router } from "./routes/entryRoutes.js"
+import { entriesRouter } from "./routes/entryRoutes.js"
 
 dotenv.config()
 
