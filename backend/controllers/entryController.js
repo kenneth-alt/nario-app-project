@@ -8,7 +8,6 @@ const createEntry = async (newEntry) => {
         return createdEntry._id
       } catch (error) {
         console.error('Error creating new entry:', error);
-        res.status(500).json(error);
       }
 }
 
