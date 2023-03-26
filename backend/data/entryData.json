@@ -1,21 +1,24 @@
 {
   "topic": "Project 1",
-  "content": "Today I worked on a new feature for our app",
+  "content": "Today I worked on the APIs for nario app",
   "status": "in progress",
   "tags": ["work", "programming", "productivity"],
-  "blockers": ["Need to fix a bug before I can proceed"]
+  "blockers": ["Need to fix a bug before I can proceed"],
+  "activityLog": [{"activity": "API Develpment", "duration": 240}, {"activity": "Platform Event", "duration": 60}],
 },
 {
   "topic": "Add MongoDB",
-  "content": "Adding mongoDB to our team dairy app",
+  "content": "Add mongoDB to our team dairy app",
   "status": "completed",
   "tags": ["work", "programming", "productivity"],
-  "blockers": [" "]
+  "blockers": [" "],
+  "activityLog": [{"activity": "Coding", "duration": 180}, {"activity": "Meetings", "duration": 30}],
 },
 {
-  "topic": "Add MongoDB",
-  "content": "Adding mongoDB to our team dairy app",
+  "topic": "Add authentication",
+  "content": "Adding authentication to our team dairy app to spice things up",
   "status": "started",
   "tags": ["work", "programming", "productivity"],
-  "blockers": ["wait for authorization from team lead to proceed"]
+  "blockers": ["wait for authorization from team lead to proceed"],
+  "activityLog": [{"activity": "Coding", "duration": 120}, {"activity": "Potluck", "duration": 45}],
 }
