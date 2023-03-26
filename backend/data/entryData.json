@@ -1,21 +1,21 @@
 {
-    "topic": "Project 1",
-    "content": "Today I worked on a new feature for our app",
-    "status": "in progress",
-    "tags": ["work", "programming", "productivity"],
-    "blockers": ["Need to fix a bug before I can proceed"]
-  },
-  {
-    "topic": "Add MongoDB",
-    "content": "Adding mongoDB to our team dairy app",
-    "status": "completed",
-    "tags": ["work", "programming", "productivity"],
-    "blockers": [" "]
-  },
-  {
-    "topic": "Add MongoDB",
-    "content": "Adding mongoDB to our team dairy app",
-    "status": "started",
-    "tags": ["work", "programming", "productivity"],
-    "blockers": ["wait for authorization from team lead to proceed"]
-  }
+  "topic": "Project 1",
+  "content": "Today I worked on a new feature for our app",
+  "status": "in progress",
+  "tags": ["work", "programming", "productivity"],
+  "blockers": ["Need to fix a bug before I can proceed"]
+},
+{
+  "topic": "Add MongoDB",
+  "content": "Adding mongoDB to our team dairy app",
+  "status": "completed",
+  "tags": ["work", "programming", "productivity"],
+  "blockers": [" "]
+},
+{
+  "topic": "Add MongoDB",
+  "content": "Adding mongoDB to our team dairy app",
+  "status": "started",
+  "tags": ["work", "programming", "productivity"],
+  "blockers": ["wait for authorization from team lead to proceed"]
+}
