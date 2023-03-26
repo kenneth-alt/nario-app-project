@@ -1,32 +1,10 @@
 import mongoose from "mongoose";
 
 const entrySchema = new mongoose.Schema({
-    topic: {
-        type: String, 
-        required: true
-        },
-    content: {
-        type: String, 
-        required: true
-        },
-    status: {
-        type: String,
-        default: 'started'
-        },
-    tags: [{         
-        type: String
-        }],
-    blockers: {
-        type: String
-        },
-    activityLog: [{
-        activity: {
-            type: String,
-            },
-        duration: {
-            type: Number,
-            },
-          }],
+    topic: {type: String, required: true},
+    content: {type: String, required: true},
+    status: {type: String, default: 'started'},
+    blockers: String,
     created_at: {type: Date, default: Date.now},
   });
 

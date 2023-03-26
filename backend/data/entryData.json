@@ -22,3 +22,10 @@
   "blockers": ["wait for authorization from team lead to proceed"],
   "activityLog": [{"activity": "Coding", "duration": 120}, {"activity": "Potluck", "duration": 45}],
 }
+
+{
+  "topic": "Add authentication",
+  "content": "Adding authentication to our team dairy app to spice things up",
+  "status": "started",
+  "blockers": "wait for authorization from team lead to proceed"  
+}
