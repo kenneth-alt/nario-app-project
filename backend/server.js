@@ -14,6 +14,6 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
 
-app.use('/entries', router)
+app.use('/entries', entriesRouter)
 
 app.listen(port, () => console.log(`Server started on port ${port}`))
