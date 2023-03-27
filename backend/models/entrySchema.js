@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const entrySchema = new mongoose.Schema({
     _id: { type: String, required: true },
-    user: {type: mongoose.Schema.Types.ObjectId, required: true, ref: 'User'},
+    userEmail: {type: String, required: true, ref: 'User'},
     topic: { type: String, required: true },
     content: { type: String, required: true },
     status: { type: String, default: 'started' },

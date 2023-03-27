@@ -1,4 +1,5 @@
 import express from "express"
+import { protect } from "../middleware/authMiddleware.js"
 import { 
     getEntries, 
     createEntry, 
@@ -8,12 +9,12 @@ import {
 
 export const entriesRouter = express.Router()
 
-entriesRouter.post('/', createEntry)
+entriesRouter.post('/', protect, createEntry)
 
-entriesRouter.get('/', getEntries) 
+entriesRouter.get('/', protect, getEntries) 
 
-entriesRouter.patch('/:id', updateEntry) 
+entriesRouter.patch('/:id', protect, updateEntry) 
 
-entriesRouter.delete('/:id', deleteEntry)
+entriesRouter.delete('/:id', protect, deleteEntry)
 
 entriesRouter.get("/:id", findEntryById)
