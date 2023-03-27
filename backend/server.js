@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 import { connectDB } from "./config/db.js"
 import { readmeRouter } from "./routes/readmeRoute.js"
 import { entriesRouter } from "./routes/entryRoutes.js"
+import { userRouter } from "./routes/userRoutes.js"
 import { errorHandler } from "./middleware/errorMiddleware.js"
 
 dotenv.config()
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: false}))
 
 app.use('/', readmeRouter)
 app.use('/entries', entriesRouter)
+app.use('/users', userRouter)
 
 app.use(errorHandler)
 
