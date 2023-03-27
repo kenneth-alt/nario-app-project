@@ -6,15 +6,15 @@ const createEntry = async (req, res) => {
     const newEntry = req.body
     try {
         const createdEntry = await Entry.create(newEntry)
-        return createdEntry._id
-        res.send(`Success, added ${newEntry.topic} - id ${id}`)
-      } catch (error) {
-            res.status(403).send(error.message)
-            if ((error.code = 11000)) {
-                throw new Error("ERROR! _id CANNOT be duplicated")
-            } 
-         }
+        res.send(`Success, added ${newEntry.topic} - id ${createdEntry._id}`)
+    } catch (error) {
+        res.status(403).send(error.message)
+        if ((error.code = 11000)) {
+            throw new Error("ERROR! _id CANNOT be duplicated")
+        } 
+    }
 }
+
 
 // get entries // route GET /entries // access Private
 const getEntries = async (req, res) => {
@@ -30,6 +30,7 @@ const getEntries = async (req, res) => {
     }
 }
 
+
 // update entries // route PUT /entries/:id // access Private
 const updateEntry = async (req, res) => {
     const id = req.params.id
@@ -43,6 +44,7 @@ const updateEntry = async (req, res) => {
     }
 }
 
+
 // delete entries // route DELETE /entries/:id // access Private
 const deleteEntry = async (req, res) => {
     const id = req.params.id
@@ -53,6 +55,7 @@ const deleteEntry = async (req, res) => {
         res.status(403).send(error.message)
     }
 }
+
 
 // get entries by id // route GET /entries/:id
 const findEntryById = async (req, res) => {
