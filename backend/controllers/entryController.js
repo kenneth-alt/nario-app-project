@@ -7,8 +7,10 @@ const createEntry = async (newEntry) => {
         const createdEntry = await Entry.create(newEntry);
         return createdEntry._id
       } catch (error) {
-        console.error('Error creating new entry:', error);
-      }
+        if ((error.code = 11000)) {
+            throw new Error("ERROR! _id CANNOT be duplicated");
+            } 
+         }
 }
 
 // @desc get entries // @route GET /entries // @access Private
@@ -31,9 +33,15 @@ const deleteEntry = async (id) => {
     return response
 }
 
+const findEntryById = async (id) => {
+    const entry = await Entry.findById(id)
+    return Entry
+  }
+
 export {
     getEntries,
     createEntry,
     updateEntry,
     deleteEntry,
+    findEntryById,
 }

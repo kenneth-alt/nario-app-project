@@ -1,2 +1,3 @@
-# nario-app-project
-Nario - make your thinking visible
+# Nario - make your thinking visible
+
+

@@ -1,31 +1,33 @@
 {
-  "topic": "Project 1",
-  "content": "Today I worked on the APIs for nario app",
+  "_id": "001",
+  "topic": "Team Meeting",
+  "content": "Discussed progress on the new project",
   "status": "in progress",
-  "tags": ["work", "programming", "productivity"],
-  "blockers": ["Need to fix a bug before I can proceed"],
-  "activityLog": [{"activity": "API Develpment", "duration": 240}, {"activity": "Platform Event", "duration": 60}],
+  "tags": ["meeting", "project"],
+  "blockers": ["haven't found mongoose documentatio for version 7"],
+  "activityLogs": [
+    {
+      "activity": "discussed progress",
+      "duration": 60},
+    {
+      "activity": "assigned tasks",
+      "duration": 30
+    }
+  ]
 },
-{
-  "topic": "Add MongoDB",
-  "content": "Add mongoDB to our team dairy app",
-  "status": "completed",
-  "tags": ["work", "programming", "productivity"],
-  "blockers": [" "],
-  "activityLog": [{"activity": "Coding", "duration": 180}, {"activity": "Meetings", "duration": 30}],
-},
-{
-  "topic": "Add authentication",
-  "content": "Adding authentication to our team dairy app to spice things up",
-  "status": "started",
-  "tags": ["work", "programming", "productivity"],
-  "blockers": ["wait for authorization from team lead to proceed"],
-  "activityLog": [{"activity": "Coding", "duration": 120}, {"activity": "Potluck", "duration": 45}],
-}
+
 
 {
-  "topic": "Add authentication",
-  "content": "Adding authentication to our team dairy app to spice things up",
+  "_id": "aff01",
+  "topic": "Project 1",
+  "content": "Develpoed API endpoints",
   "status": "started",
-  "blockers": "wait for authorization from team lead to proceed"  
+  "tags": ["personal", "journal"],
+  "blockers": ["none"],
+  "activityLogs": [
+    {
+      "activity": "coding",
+      "duration": 60
+    }
+  ]
 }
