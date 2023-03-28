@@ -7,9 +7,3 @@ export const userRouter = express.Router()
 userRouter.post('/', registerUser)
 userRouter.post('/login', loginUser)
 userRouter.get('/me', protect, getMe)
-
-
-
-
-
-
