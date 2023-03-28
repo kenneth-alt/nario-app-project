@@ -54,9 +54,13 @@ This app implements the following groups of business logic:
 
     New information body in JSON is required
     Authrization token from user login required.
+    A user can only update entries that is made by them.
 
 4. Delete entries - a DELETE request to this endpoint will delete the entry with the specified id
     http://localhost:5000/entries/:id
+
+    Authrization token from user login required.
+    A user can only delete entries that is made by them.
 
 
 ### Seacrh and Filter
