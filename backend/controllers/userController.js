@@ -37,7 +37,7 @@ const registerUser = asyncHandler(async (req, res) => {
             _id: user.id,
             name: user.name,
             email: user.email,
-            token: generateToken(user._id),
+           // token: generateToken(user._id),
             message: 'Registration successful'
         })
     } else {
@@ -76,6 +76,7 @@ const getMe = asyncHandler(async (req, res) => {
         id: _id,
         name,
         email,
+        message: "Current User",
     })
 })
 
