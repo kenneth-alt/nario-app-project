@@ -66,7 +66,7 @@ This app implements the following groups of business logic:
 
 
 ### Seacrh and Filter
-1. Find entries by id - a GET to this endpoint will fetch the entry with the specifide id
+1. Find entries by id - a GET to this endpoint will fetch the entry with the specified id
     http://localhost:5000/entries/:id
 
 
