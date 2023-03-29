@@ -45,10 +45,8 @@ const updateEntry = asyncHandler(async (req, res) => {
 
     try {
         const registeredEmail = req.user.email
-        console.log(registeredEmail)
 
         const entryEmail = entry.userEmail
-        console.log(entryEmail)
 
         // Check if user exists
         if (!registeredEmail) {
@@ -79,10 +77,8 @@ const deleteEntry = asyncHandler(async (req, res) => {
 
     try {
         const registeredEmail = req.user.email
-        console.log(registeredEmail)
 
         const entryEmail = entry.userEmail
-        console.log(entryEmail)
 
         // Check if user exists
         if (!registeredEmail) {
