@@ -10,8 +10,8 @@ This app implements the following groups of business logic:
     i. create users, login, and get user details.
     ii. create, read, update and delate entries into the diary.
 3. Searching and Filtering
-4. Error handling
-5. persistent storage of users and entries in mongoDB
+4. Error and Exceptions handling
+5. Persistent storage of users and entries in mongoDB
 
 ## User guide
 ### Home page 
@@ -24,13 +24,15 @@ This app implements the following groups of business logic:
 
     User's name, email and password are required as url-encoded text.
 
-2. Login - a POST request to this endpoint will verify the user's credential and generate a token to access prtected routes
+2. Login - a POST request to this endpoint will verify the user's credential and generate a token to access entries routes
     http://localhost:5000/users/login
 
     User's email and password, which must match an already registered user is required.
 
 3. Get current user - a GET to this endpoint returns the details of the current logged in user
     http://localhost:5000/users/me
+
+    Authrization token from user login required.
 
 
 ### Making diary entries
